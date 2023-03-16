@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica5</title>
+    <style>
+        input{
+    
+        }
+        #enviar2{
+            background-color: blue; 
+            color: white; 
+            padding: 10px; 
+            border-radius: 10px; 
+            border: 0px;
+        }
+        #enviar2:hover{
+            background-color: violet;
+            cursor: crosshair;
+        }
+        .form2{
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" >
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" >
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <form action="" name="form2" id="form2">
+        <fieldset>
+            <label for="nombre2">Nombre:</label>
+            <input type="text" name="nombre2" id="nombre2" placeholder="Ingrese su nombre.">
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido2" placeholder="Ingrese su apellido">
+
+            <label for="correo">Correo:</label>
+            <input type="email" required name="correo" id="correo" placeholder="Ingrese un correo valido.">
+
+            <label for="edad">Edad:</label>
+            <input type="number" required name="edad" id="edad" placeholder="Ingrese su edad.">
+
+            <input type="submit" value="Enviar" id="enviar2">
+            <br><br><br>
+            <label for="lenguaje">Selecciona un lenguaje:</label>
+            <input type="radio" name="lenguaje" id="html">HTML
+            <input type="radio" name="lenguaje" id="CSS">CSS
+            <input type="radio" name="lenguaje" id="js" checked>JS
+            <br><br>
+            <label for="paises">Paises que me gustaria visiatr</label>
+            <input type="checkbox" name="paises" id="Taiwan">Taiwan
+            <input type="checkbox" name="paises" id="China">China
+            <input type="checkbox" name="paises" id="Japon">Japon
+
+            <br><br>
+
+            <label for="autos">Autos:</label>
+            <select name="autos" id="autos">
+                <option value="1">BMW</option>
+                <option value="2">Mercedes Benz</option>
+                <option value="3">Tesla</option>
+                <option value="4">Audi</option>
+            </select>
+            <br><br>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+            <br><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+            <br><br>
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora">
+            <br><br>
+            <label for="cumple">Cumpleaños:</label>
+            <input type="datetime-local" id="cumple" name="cumple">
+            <br><br>
+            <input type="submit" value="Enviar" class="btnEnviar" id="enviar2">
+        
+        </fieldset>
+    </form>
+</body>
+</html>
