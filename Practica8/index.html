@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: aliceblue;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active{
+            background-color: blue;
+            color: white;
+        }
+        li a:hover:not(active){
+            background-color: black;
+            color: white;
+        }
+        #home{
+            margin-left: 25%;
+            height: 1000px;
+            color: white;
+            padding: 25px;
+            background-image: url(https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        #news{
+            margin-left: 25%;
+            height: 1000px;
+            background-color: orange;
+            padding: 25px;
+        }
+        #contact{
+            margin-left: 25%;
+            height: 1000px;
+            background-color: green;
+            padding: 25px;
+        }
+        #about{
+            margin-left: 25%;
+            height: 1000px;
+            background-color: red;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a class="active" href="#home">Inicio</a>          
+        </li>
+        <li>
+            <a href="#news">Noticias</a>          
+        </li>
+        <li>
+            <a href="#contact">Contactos</a>           
+        </li>
+        <li>
+            <a href="#about">Acerca de</a>          
+        </li>
+    </ul>
+    <div id="home">
+        <h2>Inicio</h2>
+        <h3>Subtitulo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Enim dolores tenetur quia, itaque quod minima voluptatibus hic in! Mollitia, similique nisi praesentium consectetur 
+        a sunt unde aut magni architecto maiores.</p>
+    </div>
+    <div id="news">
+        <h2>Titulo Noticias</h2>
+        <h3>Subtitulo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Enim dolores tenetur quia, itaque quod minima voluptatibus hic in! Mollitia, similique nisi praesentium consectetur 
+        a sunt unde aut magni architecto maiores.</p>
+    </div>
+    <div id="contact">
+        <h2>Contacto</h2>
+        <h3>Subtitulo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Enim dolores tenetur quia, itaque quod minima voluptatibus hic in! Mollitia, similique nisi praesentium consectetur 
+        a sunt unde aut magni architecto maiores.</p>
+    </div>
+    <div id="about">
+        <h2>Acerca de</h2>
+        <h3>Subtitulo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Enim dolores tenetur quia, itaque quod minima voluptatibus hic in! Mollitia, similique nisi praesentium consectetur 
+        a sunt unde aut magni architecto maiores.</p>
+    </div>
+</body>
+</html>
