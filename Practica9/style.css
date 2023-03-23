@@ -1,0 +1,92 @@
+body{
+    animation: colores 10s infinite;
+    text-align: center;
+}
+@keyframes colores{
+    0%{
+        background-color: pink;
+    }
+    25%{
+        background-color: black;
+    }
+    50%{
+        background-color: purple;
+    }
+    75%{
+        background-color: royalblue;
+    }
+    100%{
+        background-color: gray;
+    }
+}
+.cuadroBlanco{
+    background-color: white;
+    position: absolute;
+    animation: mueveCuadro 5s infinite;
+}
+@keyframes mueveCuadro{
+    from{
+        top: 0px;
+    }
+    to{
+        top: 200px;
+    }
+}
+#cuadroBlanco1{
+    width: 100px;
+    height: 100px;
+    left: 50px;
+}
+#cuadroBlanco2{
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
+#cuadroRojo{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 350px;
+    animation: mueveRojo 1s infinite;
+}
+@keyframes mueveRojo{
+    0%{top: 0px;}
+    25%{top: 200px; width: 400px;}
+    50%{top: 50px; background-color: greenyellow;}
+    100%{top: 100px;}
+}
+#cuadroMulticolor{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    left: 500px;
+    animation: moverMulticolor 1s infinite;
+}
+@keyframes moverMulticolor{
+    0%{top: 0px; left: 500px; background: red;}
+    25%{top: 0px; left: 600px; background: blue;}
+    50%{top: 0px; left: 700px; background: yellow;}
+    100%{top: 0px; left: 800px; background: green;}
+}
+#circulo{
+    width: 100px;
+    height: 100px;
+    left: 800px;
+    background: palegoldenrod;
+    position: absolute;
+    border-radius: 50%;
+    animation: crece 5s infinite;
+}
+@keyframes crece{
+    0%{top: 0px; width:100px; left: 100px;}
+    100%{top: 0px; width:100%; left: 100%;}
+}
+.gradiente{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 300px;
+    height: 300px;
+    padding: 200px;
+}
